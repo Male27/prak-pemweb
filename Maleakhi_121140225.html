@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <title>Halaman Utama</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set background color for the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Style the header h1 element */
+        header h1 {
+            margin: 0;
+        }
+
+        /* Style the navigation menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Style the container for main content */
+        .container {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Style the main content area */
+        main {
+            flex: 2;
+            padding: 20px;
+        }
+
+        /* Style the aside (sidebar) */
+        aside {
+            background-color: #f4f4f4;
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Style the footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Style the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Style the table header */
+        table th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Style alternating table rows */
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DreamTheater</h1>
+        <img src="logo.png" alt="Logo Website">
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home">Halaman Utama</a></li>
+                <li><a href="#form">Halaman Form</a></li>
+                <li><a href="#table">Halaman Tabel</a></li>
+            </ul>
+        </nav>
+        <main id="home">
+            <h2>Selamat datang di Halaman Utama</h2>
+            <p>Ini adalah website contoh dengan beberapa halaman. Silakan pilih salah satu halaman di menu navigasi di atas.</p>
+        </main>
+        <main id="form">
+            <h2>Formulir Mahasiswa</h2>
+            <!-- Isi formulir akan ditambahkan di sini -->
+        </main>
+        <main id="table">
+            <h2>Tabel Daftar Mahasiswa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>NIM</th>
+                        <th>Program Studi</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Alamat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Isi tabel dengan data dummy di sini -->
+                </tbody>
+            </table>
+        </main>
+        <aside>
+            <h3>Halaman Lain</h3>
+            <ul>
+                <li><a href="#home">Halaman Utama</a></li>
+                <li><a href="#form">Halaman Form</a></li>
+                <li><a href="#table">Halaman Tabel</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2023 Nama Anda. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+</body>
+</html>
