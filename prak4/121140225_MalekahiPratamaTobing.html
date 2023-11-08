@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menentukan Jumlah Bilangan Ganjil dan Genap</title>
+	<script>
+		function hitungGanjilGenap() {
+			let bilangan = document.getElementById("bilangan").value;
+			let jumGanjil = 0;
+			let jumGenap = 0;
+			for (let i = 1; i <= bilangan; i++) {
+				if (i % 2 == 0) {
+					jumGenap++;
+				} else {
+					jumGanjil++;
+				}
+			}
+			let hasil = document.getElementById("hasil");
+			hasil.innerText = "Jumlah Bilangan Genap: " + jumGenap + ", Jumlah Bilangan Ganjil: " + jumGanjil;
+		}
+	</script>
+</head>
+<body>
+	<h2>Menentukan Jumlah Bilangan Ganjil dan Genap</h2>
+	<label for="bilangan">Masukkan sebuah bilangan bulat positif:</label>
+	<input type="number" id="bilangan">
+	<button onclick="hitungGanjilGenap()">Hitung</button>
+	<p id="hasil"></p>
+</body>
+</html>
